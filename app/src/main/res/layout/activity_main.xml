@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="remmcal_apps.repavicii.MainActivity"
+    android:background="@drawable/fondo">
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_above="@+id/buttonPlay"
+        android:layout_alignStart="@+id/buttonPlay"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/imagen"
+        android:onClick="uno" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/imagen"
+        android:onClick="tres"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignStart="@+id/buttonStop" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        app:srcCompat="@drawable/avicii"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="65dp"
+        android:layout_marginTop="123dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/buttonPause"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:onClick="Pausa"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pause"
+        android:text="" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:onClick="Stop"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/stop"
+        android:text="" />
+
+    <Button
+        android:id="@+id/buttonPlay"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:onClick="Play"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="40dp"
+        android:background="@drawable/play"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignStart="@+id/buttonPause"
+        android:layout_below="@+id/imageView"
+        android:background="@drawable/imagen"
+        android:onClick="dos" />
+</RelativeLayout>
